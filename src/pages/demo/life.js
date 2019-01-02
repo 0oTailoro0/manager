@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import './style.less';
+import { Button } from 'antd';
 
 class Life extends Component {
     constructor(props){
@@ -9,8 +11,10 @@ class Life extends Component {
     }
     render() {
         return (
-            <div onClick={()=>{this.setState({count:this.state.count+1})}}>
+            <div className='con' onClick={()=>{this.setState({count:this.state.count+1})}}>
                 {this.state.count}
+                <Button type="primary">Primary</Button>
+                <a href="#">sdfas</a>
             </div>
         );
     }
